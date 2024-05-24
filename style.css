@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e6e8ea;
+}
+
+.calculator{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2),
+    -10px -10px 25px #fffb;
+    border-radius: 10px;
+}
+
+.dark .calculator{
+    background: #33393e;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.25),
+    -8px -8px 30px rgba(225,225,225,0.05);
+    border: 5px solid #33393e;
+}
+
+.calculator .buttons{
+    position: relative;
+    display: grid;
+}
+
+.calculator .buttons #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 15px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2rem;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.dark .calculator .buttons #value{
+    background: #33393e;
+    box-shadow: inset 15px 15px 10px rgba(0,0,0,0.5),
+    inset -8px -8px 20px rgba(225,225,225,0.05);
+    border: 5px solid #33393e;
+    color: #eee;
+}
+
+.calculator .buttons span{
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 8px 10px rgba(0,0,0,0.1),
+    -5px -8px 20px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #666;
+    border: 2px solid #edf1f4;
+    border-radius: 10px;
+}
+
+.dark .calculator .buttons span{
+    color: #eee;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+    -5px -5px 10px rgba(225,225,225,0.1);
+}
+
+.calculator .buttons span:active{
+    box-shadow: inset 5px 8px 10px rgba(0,0,0,0.1),
+    inset -5px -8px 20px #fff;
+}
+
+.dark .calculator .buttons span:active{
+    box-shadow: inset 5px 10px rgba(0,0,0,0.25),
+    inset -5px -5px 10px rgba(225,225,225,0.1);
+}
+
+.calculator .buttons span#clear{
+    grid-column: span 2;
+    background: #5194d6;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#plus{
+    grid-row: span 2;
+    background: #a73cf3;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#equal{
+    grid-row: span 2;
+    background: #0397a2;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#clear,
+.calculator .buttons span#plus,
+.calculator .buttons span#equal{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 20px #fff,
+    inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.dark .calculator .buttons span#clear:active,
+.dark .calculator .buttons span#plus:active,
+.dark .calculator .buttons span#equal:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.dark .calculator .buttons span#clear,
+.dark .calculator .buttons span#plus,
+.dark .calculator .buttons span#equal{
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 20px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.toggleBtn{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.dark{
+    background: #282c2f;
+}
+
+.white{
+    color: #fff;
+}
