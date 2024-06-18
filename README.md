@@ -18,7 +18,9 @@ Clear button to reset calculations. Standard numeric keys (0-9) and operation ke
 
 ### Preview:
 
-https://github.com/VinayMalyala/Custom_Calculator/assets/111955986/ea46ccb6-e097-4c7f-aa88-a6c9a4a116c5
+<video width="600" controls>
+ <source src="https://github.com/VinayMalyala/Custom_Calculator/assets/111955986/ea46ccb6-e097-4c7f-aa88-a6c9a4a116c5" type="video/mp4">
+</video>
 
 ### Custom Calculator: 
 **Blending Functionality and Creativity**
